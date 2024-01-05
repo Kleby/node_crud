@@ -1,0 +1,15 @@
+<div class="card__container">
+    <div class="card__content">
+
+    {{#with book}}
+    <div class="book-title__container">
+        <h2 class="book-title">{{title}}</h2>
+        <h4 class="book-number">#{{id}}</h4>
+    </div>
+    <div class="book-info">
+        <p class="book-pages">Páginas: {{pages}}</p>
+        <p class="book-year">Ano: {{year}}</p>
+    </div>
+    {{/with}}
+    </div>
+</div>

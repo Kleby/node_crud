@@ -1,0 +1,84 @@
+.card__container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.book-link,
+.btn-edit,
+.btn-delete{
+    text-decoration: none;
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--card-color);
+    padding: 1.5rem;
+    width: 340px;
+    border-radius: .5rem;
+}
+
+.card__content .book-title__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.card__content .book-title{
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    margin-right: .25rem;
+}
+
+.card__content .book-number{
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.card__content .book-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    color: var(--text-color);
+}
+
+.btn__container{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+.btn-edit, .btn-delete{
+    padding: .5rem .75rem;
+    color: var(--text-color);
+    border-radius: .5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-edit{
+    background-color: #166d16;
+}
+.btn-edit:hover{
+    background-color: #224922;
+}
+
+.btn-delete{
+    background-color: #f10d0d;
+}
+
+.btn-delete:hover{
+    background-color: #871b1b;
+}

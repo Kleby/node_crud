@@ -1,0 +1,19 @@
+{{#with this}}
+<a href="/book-detail/{{this.id}}" class="book-link">
+<div class="book-title__container">
+    <h2 class="book-title">{{title}}</h2>
+    <h4 class="book-number">#{{id}}</h4>
+</div>
+</a>
+<div class="book-info">
+    <p class="book-pages">Páginas: {{pages}}</p>
+    <p class="book-year">Ano: {{year}}</p>
+</div>
+
+<div class="btn__container">
+    <a href="/book/edit/{{id}}" class="btn-edit">editar</a>
+    <form action="/book/delete/{{id}}" method="POST">
+        <button type="submit" class="btn-delete">Excluir</button>
+    </form>
+</div>
+{{/with}}
